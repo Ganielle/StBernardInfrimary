@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8A781E3-9C7A-4926-B45E-EDDB172E18D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>StBernardInfirmary.My.MyApplication</StartupObject>
+    <RootNamespace>StBernardInfirmary</RootNamespace>
+    <AssemblyName>StBernardInfirmary</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>StBernardInfirmary.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>StBernardInfirmary.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>StBernardInfirmary.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>StBernardInfirmary.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.Data.EntityFrameworkCore, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.Data.EntityFrameworkCore.Design, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlXml" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminmainmenu.Designer.vb">
+      <DependentUpon>adminmainmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adminmainmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminqueue.Designer.vb">
+      <DependentUpon>adminqueue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adminqueue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cashier.Designer.vb">
+      <DependentUpon>cashier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cashier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cashout.Designer.vb">
+      <DependentUpon>cashout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cashout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cashoutprintpreview.Designer.vb">
+      <DependentUpon>cashoutprintpreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cashoutprintpreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cbc.Designer.vb">
+      <DependentUpon>cbc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cbc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cbcprintpreview.Designer.vb">
+      <DependentUpon>cbcprintpreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cbcprintpreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkupissue.Designer.vb">
+      <DependentUpon>checkupissue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="checkupissue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="electrocardiographicreport.Designer.vb">
+      <DependentUpon>electrocardiographicreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="electrocardiographicreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="electrocardiographicreportprintpreview.Designer.vb">
+      <DependentUpon>electrocardiographicreportprintpreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="electrocardiographicreportprintpreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fecalysis.Designer.vb">
+      <DependentUpon>fecalysis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fecalysis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fecalysisprintpreview.Designer.vb">
+      <DependentUpon>fecalysisprintpreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fecalysisprintpreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="getlabrequest.Designer.vb">
+      <DependentUpon>getlabrequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="getlabrequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hbsag.Designer.vb">
+      <DependentUpon>hbsag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hbsag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hbsagprintpreview.Designer.vb">
+      <DependentUpon>hbsagprintpreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hbsagprintpreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hepatobiliarytree.Designer.vb">
+      <DependentUpon>hepatobiliarytree.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hepatobiliarytree.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hepatobiliarytreeprintpreview.Designer.vb">
+      <DependentUpon>hepatobiliarytreeprintpreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hepatobiliarytreeprintpreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="labrequestform.Designer.vb">
+      <DependentUpon>labrequestform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="labrequestform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lipidprofile.Designer.vb">
+      <DependentUpon>lipidprofile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lipidprofile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lipidprofileprintpreview.Designer.vb">
+      <DependentUpon>lipidprofileprintpreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lipidprofileprintpreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medtechmainmenu.Designer.vb">
+      <DependentUpon>medtechmainmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="medtechmainmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nursemainmenu.Designer.vb">
+      <DependentUpon>nursemainmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="nursemainmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nursequeue.Designer.vb">
+      <DependentUpon>nursequeue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="nursequeue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="queue.Designer.vb">
+      <DependentUpon>queue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="queue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="records.Designer.vb">
+      <DependentUpon>records.vb</DependentUpon>
+    </Compile>
+    <Compile Include="records.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registrationnurse.Designer.vb">
+      <DependentUpon>registrationnurse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registrationnurse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="superadminmainmenu.Designer.vb">
+      <DependentUpon>superadminmainmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="superadminmainmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="registration.Designer.vb">
+      <DependentUpon>registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transvaginal.Designer.vb">
+      <DependentUpon>transvaginal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transvaginal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transvaginalprintpreview.Designer.vb">
+      <DependentUpon>transvaginalprintpreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transvaginalprintpreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urinalysis.Designer.vb">
+      <DependentUpon>urinalysis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="urinalysis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urinalysisprintpreview.Designer.vb">
+      <DependentUpon>urinalysisprintpreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="urinalysisprintpreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usermanagementsuperadmin.Designer.vb">
+      <DependentUpon>usermanagementsuperadmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usermanagementsuperadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="adminmainmenu.resx">
+      <DependentUpon>adminmainmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminqueue.resx">
+      <DependentUpon>adminqueue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cashier.resx">
+      <DependentUpon>cashier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cashout.resx">
+      <DependentUpon>cashout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cashoutprintpreview.resx">
+      <DependentUpon>cashoutprintpreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cbc.resx">
+      <DependentUpon>cbc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cbcprintpreview.resx">
+      <DependentUpon>cbcprintpreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkupissue.resx">
+      <DependentUpon>checkupissue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="electrocardiographicreport.resx">
+      <DependentUpon>electrocardiographicreport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="electrocardiographicreportprintpreview.resx">
+      <DependentUpon>electrocardiographicreportprintpreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fecalysis.resx">
+      <DependentUpon>fecalysis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fecalysisprintpreview.resx">
+      <DependentUpon>fecalysisprintpreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getlabrequest.resx">
+      <DependentUpon>getlabrequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hbsag.resx">
+      <DependentUpon>hbsag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hbsagprintpreview.resx">
+      <DependentUpon>hbsagprintpreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hepatobiliarytree.resx">
+      <DependentUpon>hepatobiliarytree.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hepatobiliarytreeprintpreview.resx">
+      <DependentUpon>hepatobiliarytreeprintpreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="labrequestform.resx">
+      <DependentUpon>labrequestform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lipidprofile.resx">
+      <DependentUpon>lipidprofile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lipidprofileprintpreview.resx">
+      <DependentUpon>lipidprofileprintpreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medtechmainmenu.resx">
+      <DependentUpon>medtechmainmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nursemainmenu.resx">
+      <DependentUpon>nursemainmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nursequeue.resx">
+      <DependentUpon>nursequeue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="queue.resx">
+      <DependentUpon>queue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="records.resx">
+      <DependentUpon>records.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registrationnurse.resx">
+      <DependentUpon>registrationnurse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="superadminmainmenu.resx">
+      <DependentUpon>superadminmainmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registration.resx">
+      <DependentUpon>registration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transvaginal.resx">
+      <DependentUpon>transvaginal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transvaginalprintpreview.resx">
+      <DependentUpon>transvaginalprintpreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urinalysis.resx">
+      <DependentUpon>urinalysis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urinalysisprintpreview.resx">
+      <DependentUpon>urinalysisprintpreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usermanagementsuperadmin.resx">
+      <DependentUpon>usermanagementsuperadmin.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
